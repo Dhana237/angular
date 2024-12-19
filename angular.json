@@ -26,15 +26,17 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
+              
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/animate.css"
             ],
-            "scripts": [],
+            "scripts": [
+                  "node_modules/jquery-countto/jquery.countTo.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -103,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "18130c9f-dd9d-43c8-adfa-4caf3444ded7"
   }
 }
